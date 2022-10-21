@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{geometry}
+
+\title{Elementos de la Teoría Cinético-Molecular}
+\author{Edgar Trejo Avila}
+\date{Jueves 10 de octubre del 2022}
+
+% https://www.overleaf.com/learn/latex/Page_size_and_margins
+\geometry{bmargin=1in,tmargin=1in}
+
+\begin{document}
+\maketitle
+
+En el siglo XIX, Ludwing Boltzmann demostró que la energía
+cinética media \(k_m\) de las moléculas (i. e., un aproximado
+de la energía cinética de cada una) es directamente 
+proporcional a la temperatura absoluta \(T\):
+
+\begin{align}
+    k_m = \frac{3kT}{2} \label{energyone} \\
+    T = \frac{2k_m}{3k} \nonumber
+\end{align}
+
+Donde \(k\) es la constante de Boltzmann:
+
+\[
+    k = 1.38\times10^{-23} \frac{J}{K}
+\]
+
+Igualando (\ref{energyone}) con la fórmula usual
+de la energía cinética (usando variables dentro 
+del contexto de una sola molécula), se obtiene:
+
+\begin{align}
+    \frac{mv^2}{2} = \frac{3kT}{2} \nonumber \\
+    v = \sqrt{\frac{3kT}{m}}
+\end{align}
+
+\end{document}
