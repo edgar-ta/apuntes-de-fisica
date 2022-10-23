@@ -1,0 +1,107 @@
+\documentclass{article}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{geometry}
+
+\title{Elementos de la Teoría Cinético Molecular 1}
+\author{Edgar Trejo Avila}
+\date{Sábado 22 de octubre del 2022}
+
+% https://www.overleaf.com/learn/latex/Page_size_and_margins
+\geometry{bmargin=1in,tmargin=1in}
+
+\begin{document}
+\maketitle
+
+\section*{Una Breve Historia del Mol}
+
+Partimos de la idea de que, los químicos de la época
+necesitaban una manera formal de medir porciones de sustancias
+(i. e., una pauta respecto a la cual tomar sus mediciones);
+particularmente, se necesitaba una unidad que definiera
+la cantidad de moléculas a utilizar por medición, pues era 
+de gran importancia el operar a nivel molecular para poder 
+definir con precisión ciertas propiedades químicas de los elementos.
+
+Llamemos a esa unidad \textit{mol}; dado que su equivalencia
+en moléculas es aún indefinida, no se pueden hacer cálculos con
+ella, sin embargo, es posible experimentar con sus características
+para lograrlo. Digamos pues que el \textit{mol} se vuelve una
+unidad común en la química y se tienen mediciones de propiedades
+de sustancias usándola; en específico, la masa \(M\) de un \textit{mol}
+de moléculas de sustancia, y la masa \(n\) de cada una de las moléculas:
+
+\begin{align*}
+    M &::= \frac{kg}{mol}\\
+    n &::= \frac{kg}{molecula}
+\end{align*}
+
+Resulta entonces que podemos calcular el número \(N\) de moléculas por
+\(mol\) haciendo el siguiente cálculo:
+
+\begin{align*}
+    N \frac{molecula}{mol} &= \frac{M \frac{kg}{mol}}{n \frac{kg}{molecula}}\\
+    &= \frac{M}{n} \frac{molecula}{mol}
+\end{align*}
+
+Nótese como \(N\) es una constante; la forma en que está definida
+es tal que la equivalencia de un \(mol\) en moléculas es la misma
+independientemente de la sustancia, i. e., un \(mol\) de hierro 
+debe tener la misma cantidad de moléculas que un \(mol\) de carbono,
+por ejemplo. Dado que \(N\) es una constante, solo hace falta medirla
+una vez para dejarla definida para siempre; lo que hicieron los 
+químicos de la época fue tomar la masa molecular (i. e., la masa 
+de una sola molécula) de una sustancia conocida para la época y después inventar
+la masa que un \(mol\) de esa sustancia debería tener (si apenas se 
+está definiendo el \(mol\) no se puede tomar una medida real que 
+dependa de él; tuvo que haber entonces un factor de arbitrariedad en
+el proceso).
+
+La sustancia elegida fue el carbono, que se sabe tiene una masa de \(1.66\times10^{-27}\frac{kg}{molecula}\),
+y la masa elegida fue de \(1\frac{kg}{mol}\):
+
+\begin{align*}
+    N\frac{molecula}{mol} &= \frac{1\frac{kg}{mol}}{1.66 \times 10^{-27}\frac{kg}{molecula}}\\
+    &= 6.02 \times 10^{26} \frac{molecula}{mol}
+\end{align*}
+
+Puesto verbalmente:
+
+\begin{quote}
+    Un mol está definido como la cantidad de moléculas
+    de carbono que hay en un kilogramo de esa sustancia
+\end{quote}
+
+El descubrimiento de dicho número \(N\) se le atribuye al físico-químico
+italiano \textit{Amadeo Avogadro}, y por eso es que se le conoce
+como \textit{el número de Avogadro}:
+
+\begin{align}
+    N_A = 6.02 \times 10^{26} \frac{molecula}{mol} \label{orignalAvogadro}
+\end{align}
+
+Ahora bien, uno de los propósitos del \(mol\) es facilitar
+la medición de propiedades al nivel molecular; esto es
+posible pues el número de moléculas que representa es tan grande
+que la cantidad de sustancia a medir se vuelve tangible y
+realizable aún sin tanta precisión (i. e., un grupo de 
+\(6.02 \times 10^{26}\) moléculas de sustancia forman una masa
+que se puede ponderar con una báscula casera, a diferencia de, dígase,
+\(100\) moléculas, que requerirían de equipo muy especializado 
+para medirlas satisfactoriamente).
+
+Sin embargo, aún siendo un número tan grande, los químicos 
+pronto se dieron cuenta de que el \(mol\) se quedaba 
+corto en varias ocaciones, así que decidieron deprecar su uso y migrar
+a una unidad derivada; el \(kmol\) (equivalente, por supuesto,
+a \(1,000\,moles\)). Ajustando la ecuación (\ref{orignalAvogadro}) a \(kmoles\),
+se tiene que:
+
+\[
+    N_A = 6.02 \times 10^{29} \frac{molecula}{kmol}
+\]
+
+
+\paragraph*{Ecuación Fundamental de la Teoría Cinético-Molecular}
+
+\end{document}
