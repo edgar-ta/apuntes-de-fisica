@@ -15,45 +15,50 @@
 
 \section*{Una Breve Historia del Mol}
 
+Hubo un momento en que la química seguía siendo una
+ciencia informal (de hecho, lleva poco tiempo de ser formalizada
+al compararla con ciencias como la física o las matemáticas)
+
 Partimos de la idea de que, los químicos de la época
-necesitaban una manera formal de medir porciones de sustancias
+necesitaban una manera de medir propiedades de sustancias
 (i. e., una pauta respecto a la cual tomar sus mediciones);
 particularmente, se necesitaba una unidad que definiera
-la cantidad de moléculas a utilizar por medición, pues era 
-de gran importancia el operar a nivel molecular para poder 
+la cantidad de moléculas a utilizar por medición, pues era
+de gran importancia el operar a nivel molecular para poder
 definir con precisión ciertas propiedades químicas de los elementos.
 
 Llamemos a esa unidad \textit{mol}; dado que su equivalencia
 en moléculas es aún indefinida, no se pueden hacer cálculos con
 ella, sin embargo, es posible experimentar con sus características
 para lograrlo. Digamos pues que el \textit{mol} se vuelve una
-unidad común en la química y se tienen mediciones de propiedades
-de sustancias usándola; en específico, la masa \(M\) de un \textit{mol}
+unidad común en la química y se tienen mediciones usándola;
+en específico, la masa \(M\) de un \textit{mol}
 de moléculas de sustancia, y la masa \(n\) de cada una de las moléculas:
 
 \begin{align*}
-    M &::= \frac{kg}{mol}\\
-    n &::= \frac{kg}{molecula}
+    M & ::= \frac{kg}{mol}      \\
+    n & ::= \frac{kg}{molecula}
 \end{align*}
 
 Resulta entonces que podemos calcular el número \(N\) de moléculas por
 \(mol\) haciendo el siguiente cálculo:
 
-\begin{align*}
-    N \frac{molecula}{mol} &= \frac{M \frac{kg}{mol}}{n \frac{kg}{molecula}}\\
-    &= \frac{M}{n} \frac{molecula}{mol}
-\end{align*}
+\begin{align}
+    N \frac{molecula}{mol} & = \frac{M \frac{kg}{mol}}{n \frac{kg}{molecula}} \nonumber
+    \\
+                           & = \frac{M}{n} \frac{molecula}{mol} \label{avogadroEquivalence}
+\end{align}
 
 Nótese como \(N\) es una constante; la forma en que está definida
 es tal que la equivalencia de un \(mol\) en moléculas es la misma
-independientemente de la sustancia, i. e., un \(mol\) de hierro 
+independientemente de la sustancia, i. e., un \(mol\) de hierro
 debe tener la misma cantidad de moléculas que un \(mol\) de carbono,
 por ejemplo. Dado que \(N\) es una constante, solo hace falta medirla
-una vez para dejarla definida para siempre; lo que hicieron los 
-químicos de la época fue tomar la masa molecular (i. e., la masa 
-de una sola molécula) de una sustancia conocida para la época y después inventar
-la masa que un \(mol\) de esa sustancia debería tener (si apenas se 
-está definiendo el \(mol\) no se puede tomar una medida real que 
+una vez para dejarla definida para siempre; lo que hicieron los
+químicos de la época fue tomar la masa molecular (i. e., la masa
+de una sola molécula) de una sustancia conocida y después inventar
+la masa que un \(mol\) de esa sustancia debería tener (si apenas se
+está definiendo el \(mol\) no se puede tomar una medida real que
 dependa de él; tuvo que haber entonces un factor de arbitrariedad en
 el proceso).
 
@@ -61,47 +66,254 @@ La sustancia elegida fue el carbono, que se sabe tiene una masa de \(1.66\times1
 y la masa elegida fue de \(1\frac{kg}{mol}\):
 
 \begin{align*}
-    N\frac{molecula}{mol} &= \frac{1\frac{kg}{mol}}{1.66 \times 10^{-27}\frac{kg}{molecula}}\\
-    &= 6.02 \times 10^{26} \frac{molecula}{mol}
+    N\frac{molecula}{mol} & = \frac{1\frac{kg}{mol}}{1.66 \times 10^{-27}\frac{kg}{molecula}} \\
+                          & = 6.02 \times 10^{26} \frac{molecula}{mol}
 \end{align*}
 
 Puesto verbalmente:
 
 \begin{quote}
-    Un mol está definido como la cantidad de moléculas
+    Un mol se define como la cantidad de moléculas
     de carbono que hay en un kilogramo de esa sustancia
 \end{quote}
 
 El descubrimiento de dicho número \(N\) se le atribuye al físico-químico
 italiano \textit{Amadeo Avogadro}, y por eso es que se le conoce
-como \textit{el número de Avogadro}:
+como el \textit{número de Avogadro} (representado como \(N_A\)):
 
 \begin{align}
-    N_A = 6.02 \times 10^{26} \frac{molecula}{mol} \label{orignalAvogadro}
+    N_A = 6.02 \times 10^{26} \frac{molecula}{mol} \label{originalAvogadro}
 \end{align}
 
 Ahora bien, uno de los propósitos del \(mol\) es facilitar
 la medición de propiedades al nivel molecular; esto es
 posible pues el número de moléculas que representa es tan grande
 que la cantidad de sustancia a medir se vuelve tangible y
-realizable aún sin tanta precisión (i. e., un grupo de 
+realizable aún sin tanta precisión (i. e., un grupo de
 \(6.02 \times 10^{26}\) moléculas de sustancia forman una masa
 que se puede ponderar con una báscula casera, a diferencia de, dígase,
-\(100\) moléculas, que requerirían de equipo muy especializado 
+\(100\) moléculas, que requerirían de equipo muy especializado
 para medirlas satisfactoriamente).
 
-Sin embargo, aún siendo un número tan grande, los químicos 
-pronto se dieron cuenta de que el \(mol\) se quedaba 
-corto en varias ocaciones, así que decidieron deprecar su uso y migrar
+Sin embargo, aún siendo un número tan grande, los químicos
+pronto se dieron cuenta de que el \(mol\) se quedaba
+corto en varias ocaciones, así que decidieron reemplazar su uso migrando
 a una unidad derivada; el \(kmol\) (equivalente, por supuesto,
-a \(1,000\,moles\)). Ajustando la ecuación (\ref{orignalAvogadro}) a \(kmoles\),
+a \(1,000\,moles\)). Ajustando la ecuación (\ref{originalAvogadro}) a \(kmoles\),
 se tiene que:
 
 \[
     N_A = 6.02 \times 10^{29} \frac{molecula}{kmol}
 \]
 
+Retomando lo expuesto en (\ref{avogadroEquivalence}) y ajustando también a \(kmoles\):
 
-\paragraph*{Ecuación Fundamental de la Teoría Cinético-Molecular}
+\begin{align}
+    n \frac{kg}{molecula} = \frac{M \frac{kg}{kmol}}{ N_A \frac{molecula}{kmol}}
+\end{align}
+
+La ecuación anterior es bastante útil, pues permite determinar una propiedad de una
+sustancia a nivel molecular sin requerir de instrumentos de precisión irreal, siguiendo
+con el que se ha dicho es el propósito de la propia creación del \(mol\).
+
+\section*{El Número de Loschmidt}
+
+Es un hecho conocido que, en un proceso \textbf{isotérmico} e \textbf{isobárico},
+el volumen de un \(kmol\) de gas es constante; de \(22.4\,m^3\):
+
+\[
+    C = 22.4 \frac{m^3}{kmol}
+\]
+
+Utilizando el \textit{número de Avogadro}, uno
+puede calcular el número de moléculas \(n\) por
+unidad de volumen:
+
+\begin{align*}
+    n \frac{molecula}{m^3} & = \frac{6.02 \times 10^{26} \frac{molecula}{kmol}}{22.4 \frac{m^3}{kmol}} \\
+                           & = 26.81 \times 10^{24} \frac{molecula}{m^3}
+\end{align*}
+
+Este número se le atribuye al científico austriaco
+\textit{Josef Loschmidt}, y se le conoce como el
+\textit{número de Loschmidt} (representado como \(n_L\)):
+
+\[
+    n_L = 26.81 \times 10^{24} \frac{molecula}{m^3}
+\]
+
+\section*{El Cubo de Gas}
+
+Medir propiedades de los gases siempre ha sido un reto
+para los científicos; no se pueden pesar como uno haría
+con un sólido o un líquido, no se puede medir su volumen,
+y variaciones pequeñas de temperatura/presión afectan
+significativamente su comportamiento. Sin embargo, aún hay
+esperanza de dominar a este estado de la materia tan peculiar;
+queda claro que los gases son bastante dependientes a las
+condiciones del ambiente en el que se les mide, entonces,
+la mejor forma de obtener una medición acertada es controlando
+el ambiente tanto como sea posible (de ahí que las fórmulas
+relacionadas a los gases constantemente aclaren condiciones
+como "a temperatura ambiente", "a presión atmosférica",
+"con un volumen constante" y demás).
+
+La forma más común para realizar mediciones en los gases es
+aislarlos en una cámara de vacío (algo parecido a lo que se
+hace para pesarlos); consideremos pues una cámara en forma de cubo
+albergando un gas y experimentemos con sus características para
+calcular una de sus propiedades físicas, en este caso, la presión
+ejercida por el gas en las caras de la cámara.
+
+Como condiciones iniciales, se sabe que el cubo tiene una longitud
+de \(L\) metros y alberga \(n\) moléculas moviéndose a distintas
+velocidades, más aún, asúmase que las moléculas están rebotando
+constantemente de una cara del cubo a otra (la contraria en el mismo eje);
+si se sabe la cantidad \(n'\) de moléculas que están rebotando en un eje,
+uno puede calcular la presión ejercida en las caras de dicho eje
+al conocer la fuerza producida por las moléculas (haría falta conocer
+también el área de cada cara, pero eso es trivial pues ya se tiene
+el lado del cubo/cámara). Para calcular la fuerza total de las moléculas,
+considérese primero el comportamiento de una sola, déjese fija una \(molecula_i\)
+con velocidad \(v_i\) y masa \(m_i\), se tiene que:
+
+\[
+    p_i = v_i m_i
+\]
+
+Donde \(p_i\) es el ímpetu inicial de la \(molecula_i\); dado que ésta
+está rebotando constantemente, eventualmente golpeará la otra cara el
+mismo eje y regresará al lugar de partida con una velocidad negativa
+(si la \(molecula_i\) parte siguiendo una dirección positiva,
+al rebotar la cambiará por la dirección contraria que, por definición,
+es negativa); entonces se tiene que:
+
+\[
+    p'_i = -v_i m_i
+\]
+
+Donde \(p'_i\) es el ímpetu final de la \(molecula_i\); considérese ahora
+el tiempo \(t_i\) que le toma llegar a la posición final desde la
+posición incial. Se sabe que \(t = \frac{d}{v}\), y que la \(molecula_i\)
+tendrá que recorrer una distancia de \(2L\) (la longitud de un lado,
+una vez para la ida y otra para la vuelta) entonces:
+
+\[
+    t_i = \frac{2L}{v_i}
+\]
+
+Luego, es un hecho conocido que \(F = \frac{\Delta p}{\Delta t}\), entonces,
+la fuerza \(F_i\) de la \(molecula_i\) es tal que:
+
+\begin{align*}
+    F_i & = \frac{\Delta p}{\Delta t}                 \\
+        & = \frac{p'_i - p_i}{\frac{2L}{v_i} - 0}     \\
+        & = \frac{-v_i m_i - v_i m_i}{\frac{2L}{v_i}} \\
+        & = \frac{-2v_i m_i}{\frac{2L}{v_i}}          \\
+        & = -\frac{v^2_i m_i}{L}
+\end{align*}
+
+Nótese que el signo negativo viene dado por el marco
+de referencia respecto al cual se mide la velocidad;
+como tal, no tiene sentido físico decir que la
+fuerza es negativa si no se considera ese mismo
+marco y, por lo tanto, se puede depreciar:
+
+\[
+    F_i = \frac{v^2_i m_i}{L}
+\]
+
+Ahora, esta fórmula se puede aplicar para cada una
+de las \(n'\) moléculas rebotando en un eje, entonces
+la fuerza total \(F_{total}\) es tal que:
+
+\begin{align*}
+    F_{total} & = \sum_{i = 1}^{n'}  F_i                \\
+              & = \sum_{i = 1}^{n'} \frac{v^2_i m_i}{L} \\
+\end{align*}
+
+En la teoría molecular, se considera que propiedades 
+físicas como la masa son iguales para cada molécula 
+de una misma sustancia, entonces:
+
+\begin{align*}
+    F_{total} = \frac{m}{L} \sum_{i = 1}^{n'} v^2_i
+\end{align*}
+
+La sumatoria de la ecuación anterior requiere 
+conocimientos/herramientas de medición que se salen
+del ámbito de la física, por lo que es mejor 
+relegársela a una ciencia más apta, encargada de 
+la toma y el análisis de datos; la estadística. Ésta
+nos provee de un cálculo bastante similar al de 
+la sumatoria anterior, conocido como desviación 
+estándar, en la forma de una variable \(v_{cm}\)
+(leída como "velocidad cuadrática media"):
+
+\[
+    v_{cm} = \sqrt{\frac{\sum_{i = 1}^{n'} v_i^2}{n'}}
+\]
+
+Esto es:
+
+\begin{align*}
+    v_{cm}^2    &= \frac{\sum_{i = 1}^{n'} v_i^2 }{n'},\\
+    v_{cm}^2 n' &= \sum_{i = 1}^{n'} v_i^2
+\end{align*}
+
+Por lo tanto:
+
+\begin{align*}
+    F_{total}   &= \frac{m}{L} v_{cm}^2 n' \\
+                &= \frac{m n' v_{cm}^2}{L}
+\end{align*}
+
+Ahora, considérese que las partículas dentro de la 
+cámara/cubo están repartidas equitativamente en sus 
+ejes (recuérdese que un cubo tiene tres ejes), entonces:
+
+\[
+    n' = \frac{n}{3}
+\]
+
+Esto es:
+
+\[
+    F_{total} = \frac{m n v_{cm}^2}{3 L}
+\]
+
+Se sabe que la presión está dada por la fórmula \(P = \frac{F}{A}\)
+y, como se detalló al inicio, calcular el área de la cara
+del cubo es trivial; entonces:
+
+\begin{align*}
+    P   &= \frac{F_{total}}{A} \\
+        &= \frac{\frac{m n v_{cm}^2}{3 L}}{L^2} \\
+        &= \frac{m n v_{cm}^2}{3 L^3}
+\end{align*}
+
+Dado que la expresión \(L^3\) es igual al volumen \(V\) del cubo,
+se tiene que:
+
+\begin{align*}
+    P = \frac{m n v_{cm}^2}{3 V}
+\end{align*}
+
+Nótese que el producto \(m n\) es equivalente a la masa
+dentro del cubo (en efecto pues, por definición, este es el producto
+de la masa de cada molécula por el número de moléculas dentro
+del cubo); más aún, al dividirlo por el volumen se obtiene la 
+densidad \(\rho\) del cubo, de modo que:
+
+\begin{align}
+    P = \frac{\rho v_{cm}^2}{3}
+\end{align}
+
+Si se deja \(n_0\) igual al número de moléculas por unidad 
+de volumen, \(\rho\) se puede reescribir como \(m n_0\), entonces:
+
+\[
+    P = \frac{m n_0 v_{cm}^2}{3}
+\]
 
 \end{document}
