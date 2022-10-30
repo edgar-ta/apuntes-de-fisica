@@ -1,0 +1,130 @@
+\documentclass{article}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{geometry}
+
+\title{La Dilatación Ideal}
+\author{Edgar Trejo Avila}
+\date{Sábado 29 de octubre del 2022}
+
+% https://www.overleaf.com/learn/latex/Page_size_and_margins
+\geometry{bmargin=1in,tmargin=1in}
+
+\begin{document}
+\maketitle
+
+\section*{Dilatación Lineal}
+
+Imagínese una barra de longitud inicial \(L_0\)
+a una determinada temperatura inicial \(T_0\) que
+hace que ésta (la barra) experimente un cambio de 
+longitud (llamado "dilatación") representado por 
+\(\Delta L\), de modo que su longitud final es \(L\).
+Se sabe que \(\Delta L\) es directamente proporcional
+al producto del cambio de temperatura \(\Delta T\) y 
+\(L_0\), i.e., el cociente \(\frac{\Delta L}{L_0 \Delta T}\)
+es una constante (llamada coeficiente de dilatación)
+representada por la letra griega \(\alpha\), de modo que:
+
+\begin{align}
+    \Delta L = \alpha L_0 \Delta T \label{linearDilatation}
+\end{align}
+
+Esto es:
+
+\begin{align*}
+    L - L_0 &= \alpha L_0 \Delta T \\
+    L       &= \alpha L_0 \Delta T + L_0 \\
+            &= L_0 \left( \alpha \Delta T + 1 \right) 
+\end{align*}
+
+\section*{Dilatación Superficial}
+
+Siguiendo con la premisa de la sección anterior, imagínese 
+ahora un cuadrado de longitud \(L_0\) que experimenta una
+dilatación. Es evidente que un cambio en su longitud desencadena
+también uno en su área, y es de ahí que nace el propósito de 
+esta sección, que es obtener una relación entre el área final 
+y la inicial del cuadrado. 
+
+Por la fórmula del área del cuadrado, se sabe que el área 
+inicial \(A_0\) es igual a \(L_0^2\). De la misma manera,
+el área final \(A\) es tal que:
+
+\begin{align*}
+    A   &= L^2 \\
+        &= \left( L_0 + \Delta L \right)^2 \\
+        &= L_0^2 + 2 L_0 \Delta L + \Delta L^2 \\
+\end{align*}
+
+Introduciendo a \(\Delta A\) como el cambio entre el
+área inicial y la final:
+
+\begin{align*}
+    \Delta A    &= A - A_0 \\
+                &= \left( L_0^2 + 2 L_0 \Delta L + \Delta L^2 \right) - A_0 \\
+                &= \left( L_0^2 + 2 L_0 \Delta L + \Delta L^2 \right) - L_0^2 \\
+                &= 2 L_0 \Delta L + \Delta L^2
+\end{align*}
+
+El cambio de longitud
+es lo suficientemente pequeño como para ser
+depreciable cuando su exponente es mayor a uno
+(i. e., un cuadrado, un cubo, etc.), de modo que:
+
+\[
+    \Delta A = 2 L_0 \Delta L
+\]
+
+Luego:
+
+\begin{align*}
+    A   &= A_0 + \Delta A \\
+        &= A_0 + 2 L_0 \Delta L \\
+\end{align*}
+
+Por (\ref{linearDilatation}):
+
+\begin{align*}
+    A   &= A_0 + 2 L_0 \Delta L \\
+        &= A_0 + 2 L_0 \left( L_0 \alpha \Delta T \right) \\
+        &= A_0 + 2 L_0^2 \alpha \Delta T \\
+        &= A_0 + 2 A_0 \alpha \Delta T \\
+        &= A_0 \left( 2 \alpha \Delta T + 1 \right)
+\end{align*}
+
+\section*{Dilatación Volumétrica}
+
+Siguiendo con la misma premisa, uno puede calcular 
+la relación entre el volumen inicial \(V_0\) y el
+volumen final \(V\) de 
+un cubo de longitud \(L_0\):
+
+\begin{align*}
+    V   &= L^3 \\
+        &= \left( L_0 + \Delta L \right)^3 \\
+        &= L_0^3 + 3 L_0^2 \Delta L + 3 L_0 \Delta L^2 + \Delta L^3 \\
+        &= L_0^3 + 3 L_0^2 \Delta L \\
+        &= L_0^3 + 3 L_0^2 \left( \alpha L_0 \Delta T \right) \\
+        &= L_0^3 + 3 L_0^3 \alpha \Delta T \\
+        &= V_0 + 3 V_0 \alpha \Delta T \\
+        &= V_0 \left( 3 \alpha \Delta T + 1 \right) 
+\end{align*}
+
+Recuérdese que las potencias de \(\Delta L\) con exponente
+mayor a uno se pueden depreciar.
+
+\section*{Patrón General}
+
+Como es fácil de ver, la fórmula para la dilatación 
+sigue la estructura:
+
+\begin{align}
+    L_0^n \left( n \alpha \Delta T + 1 \right); \hspace{1cm} 1 \leq n \leq 3
+\end{align}
+
+Donde \(n\) representa la dimensión de la dilatación que 
+se quiere medir
+
+
+\end{document}
