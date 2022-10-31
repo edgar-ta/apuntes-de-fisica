@@ -1,0 +1,88 @@
+\documentclass{article}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{geometry}
+% https://tex.stackexchange.com/a/2376
+\usepackage[T1]{fontenc}
+\usepackage{array}
+
+\title{Notas Finales}
+\author{Edgar Trejo Avila}
+\date{Domingo 30 de octubre del 2022}
+
+% https://www.overleaf.com/learn/latex/Page_size_and_margins
+\geometry{bmargin=1in,tmargin=1in}
+
+\begin{document}
+\maketitle
+
+\section*{Constantes Importantes}
+
+\begin{align*}
+    N_A &= 6.02 \times 10^{26} \frac{mole}{kmol} &\textit{\textbf{(Número de Avogadro)}} \\
+    n_L &= 26.81 \times 10^{24} \frac{mole}{m^3} &\textit{\textbf{(Número de Loschmidt)}} \\
+    k   &= 1.38 \times 10^{-23} \frac{J}{K}      &\textit{\textbf{(Constante de Boltzmann)}} \\
+\end{align*}
+
+\section*{Fórmulas Importantes}
+
+\subsection*{Masa Molecular}
+
+\begin{align*}
+    m   &= \frac{M}{N_A} \\[1cm]
+    m   &:=  \textit{\textbf{<masa-molecular>}}     &\frac{kg}{mole} \\
+    M   &:=  \textit{\textbf{<peso-molecular>}}     &\frac{kg}{kmol} \\
+    N_A &:= \textit{\textbf{<número-de-avogadro>}}  &\frac{mole}{kmol}
+\end{align*}
+
+\subsection*{Presión de un Cubo de Gas}
+
+\begin{align*}
+    P           &= \frac{\rho v_{cm}^2}{3} \\[1cm]
+    P           &:= \textit{\textbf{<presión>}}                     &Pa \\
+    \rho        &:= \textit{\textbf{<densidad-del-cubo>}}           &\frac{kg}{m^3} \\
+    v_{cm}      &:= \textit{\textbf{<velocidad-cuadrática-media>}}  &\frac{m}{s}
+\end{align*}
+
+\subsection*{Energía Cinética Media}
+
+\begin{align*}
+    k_m     &= \frac{3kT}{2} \\[1cm]
+    k_m     &:= \textit{\textbf{<energía-cinética-media>}}  &J \\
+    k       &:= \textit{\textbf{<constante-de-boltzmann>}}  &\frac{J}{K} \\
+    T       &:= \textit{\textbf{<temperatura-en-kelvin>}}   &K
+\end{align*}
+
+\subsection*{Dilatación Ideal}
+
+\begin{align*}
+    L^n         &= L_0^n \left( n \alpha \Delta T + 1 \right) \\[1cm]
+    L           &:= \textit{\textbf{<longitud-final-del-lado>}}     &m \\
+    L_0         &:= \textit{\textbf{<longitud-inicial-del-lado>}}   &m \\
+    n           &:= \textit{\textbf{<dimensión-de-la-dilatación>}}  &\varnothing \\
+    \alpha      &:= \textit{\textbf{<coeficiente-de-dilatación>}}   &^\circ C^{-1} \\
+    \Delta T    &:= \textit{\textbf{<cambio-de-temperatura>}}       &^\circ C
+\end{align*}
+
+\subsection*{Ley General de los Gases Ideales}
+
+\begin{align*}
+    \frac{PV}{T} &= Nk = C \\[1cm]
+    P       &:= \textit{\textbf{<presión-del-gas>}}         &Pa \\
+    V       &:= \textit{\textbf{<volumen-del-gas>}}         &m^3 \\
+    T       &:= \textit{\textbf{<temperatura-del-gas>}}     &K \\
+    N       &:= \textit{\textbf{<número-de-moléculas>}}     &\varnothing \\
+    k       &:= \textit{\textbf{<constante-de-boltzmann>}}  &\frac{J}{K} \\
+    C       &:= \textit{\textbf{<constante>}}               &\frac{Pa \cdot m^3}{K}
+\end{align*}
+
+\section*{Conceptos Importantes}
+
+\begin{tabular}{m{3cm} l}
+    \textbf{Isobárico} & Misma presión \\
+    \textbf{Isotérmico} & Misma temperatura \\
+    \textbf{Isocórico} & Mismo volumen \\
+\end{tabular}
+
+\end{document}
