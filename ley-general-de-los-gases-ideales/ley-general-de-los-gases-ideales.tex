@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{geometry}
+
+\title{Ley General de los Gases Ideales}
+\author{Edgar Trejo Avila}
+\date{Miércoles 20 de octubre del 2022}
+
+% https://www.overleaf.com/learn/latex/Theorems_and_proofs#Introduction
+\newtheorem{law}{Ley}
+
+% https://www.overleaf.com/learn/latex/Page_size_and_margins
+\geometry{bmargin=1in,tmargin=1in}
+
+\begin{document}
+\maketitle
+
+Considerando que \(n_0\) se puede
+escribir como el número \(N\) de moléculas
+por unidad \(V\) de volumen de gas (i. e., \(n_0 = \frac{N}{V}\)),
+es posible escribir la ecuación de \emph{Gay Lussac}
+como:
+
+\begin{align*}
+    P &= \frac{NkT}{V} \\
+    \frac{PV}{T} &= Nk
+\end{align*}
+
+\begin{law}[Ley General de los Gases Ideales]
+    En un gas ideal, \(\frac{PV}{T}\) es una constante,
+    i. e., para una configuración inicial y final de un gas,
+    se cumple que:
+
+    \[
+        \frac{P_iV_i}{T_i} = \frac{P_fV_f}{T_f}
+    \]
+\end{law}
+
+\begin{law}[Ley de Boyle (transformación \textbf{isotérmica}\footnote{De la raíz griega \textit{iso-}, que significa \textit{igual}})]
+    Cuando la temperatura de un gas es constante,
+    se tiene que el producto de su presión y su volumen
+    es constante, i. e.:
+
+    \begin{align*}
+        PV &= C\\
+        P &= \frac{C}{V}
+    \end{align*}
+\end{law}
+
+\begin{law}[Ley de Charles (transformación \textbf{isobárica}\footnote{De la raíz griega \textit{-baros}, que significa \textit{peso}})]
+    Cuando la presión de un gas es constante,
+    se tiene que el cociente de su volumen y
+    su temperatura es constante, i. e.:
+
+    \[
+        \frac{V}{T} = \frac{Nk}{P} = C
+    \]
+\end{law}
+
+\begin{law}[Ley de Gay Lussac (transformación \textbf{isocórica}\footnote{De la raíz griega \textit{-coros}, que significa \textit{espacio}})]
+    Cuando el volumen de un gas es constante, 
+    se tiene que el cociente de su presión y 
+    su temperatura es constante, i. e.:
+
+    \[
+        \frac{P}{T} = \frac{Nk}{V} = C
+    \]
+\end{law}
+
+% https://tex.stackexchange.com/a/192158
+\thispagestyle{empty}
+
+\end{document}
